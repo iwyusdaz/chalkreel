@@ -19,11 +19,11 @@ That struggle is the point.
 It is called retrieval practice, and it is
 
 6
-00:00:14,651 --> 00:00:18,382
+00:00:14,651 --> 00:00:18,300
 one of the best-studied ways to make learning
 
 7
-00:00:18,300 --> 00:00:20,802
+00:00:18,300 --> 00:00:18,412
 Retrieval practice means pulling information
 
 8
@@ -51,7 +51,7 @@ looks familiar.
 But familiarity is not the same as being able
 
 14
-00:00:33,562 --> 00:00:36,906
+00:00:33,562 --> 00:00:35,900
 to recall it later, without the book.
 
 15
@@ -83,7 +83,7 @@ substantially more.
 A 2017 review of dozens of experiments found
 
 22
-00:00:55,682 --> 00:00:58,719
+00:00:55,682 --> 00:00:57,300
 the same pattern across ages and subjects.
 
 23
@@ -111,7 +111,7 @@ Psychologists call this a desirable difficulty.
 The effort is not a sign of failure, it is
 
 29
-00:01:15,442 --> 00:01:18,094
+00:01:15,442 --> 00:01:17,100
 part of how the memory gets stronger.
 
 30
@@ -139,7 +139,7 @@ Or do a brain dump: close your notes and
 write down everything you remember about the
 
 36
-00:01:35,875 --> 00:01:39,008
+00:01:35,875 --> 00:01:37,700
 topic, then check what you missed.
 
 37

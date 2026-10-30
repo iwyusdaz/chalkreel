@@ -13,6 +13,7 @@ never present pending work as done.
 | Compile verification | `tsc --noEmit`, `remotion bundle` in `template/` | Pass | "Compile check" |
 | Render verification | `remotion render` (360 frames) + `remotion still` at 5 frames | Pass; assets committed to `docs/assets/` | "Render check" |
 | Frame review | Agent heuristic review of rendered stills against the written frame criteria in `skill/SKILL.md` | 1 real FAIL found (timeline line crossing labels), fixed, re-checked PASS | **"Agent heuristic review (build agent)"** — same model as the author; disclosed limitation |
+| Independent agent review (fresh context) | Reviewing agent that did not build the repo: honesty audit, licensing-boundary grep vs `anything2explainer`/`humanizer`, full test run, `tsc --noEmit`, script edge-case probing, repo hygiene, docs accessibility spot-check | 3 script bugs + 1 packaging inconsistency found and fixed; 1 open finding (a11y fact extraction misses names joined by stopwords) | **"Agent review (fresh context, same model family)"** — see `evaluation/agent-review.md`; still a model review, not human or multi-model |
 
 ## Pending (do not cite as done)
 
@@ -21,7 +22,7 @@ never present pending work as done.
 | TTS voiceover (kokoro-82m) for the sample video | A local TTS run; word timestamps replace the constructed example | PENDING — requires TTS run |
 | Word-alignment audio spot-check | 10 cues checked against real audio timestamps | PENDING — requires TTS run |
 | Full-length render with audio + GATE 4 | Same | PENDING |
-| Multi-model agent review panel | ≥2 configured models reviewing the paper trail and QC output | PENDING — requires API keys (`.env.example` to be added when the pipeline lands) |
+| Multi-model agent review panel | ≥2 configured models reviewing the paper trail and QC output | PENDING — the fresh-context review in `evaluation/agent-review.md` is single-model (same family as the build agent); a panel of ≥2 different models still requires API keys (`.env.example` to be added when the pipeline lands) |
 | Human educator review of one output video | 2–3 educators, consented protocol | PENDING — protocol to be added under `evaluation/human-protocol/` |
 | Manual screen-reader pass on `docs/` by an assistive-technology user | Human tester | PENDING — stated as a limitation in the README |
 

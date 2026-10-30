@@ -55,11 +55,14 @@ function parseArgs(argv) {
 }
 
 function fmt(t) {
-  if (t < 0) t = 0;
-  const h = Math.floor(t / 3600);
-  const m = Math.floor((t % 3600) / 60);
-  const s = Math.floor(t % 60);
-  const ms = Math.round((t - Math.floor(t)) * 1000);
+  if (!Number.isFinite(t) || t < 0) t = 0;
+  // Quantize once at millisecond precision so rounding can never push the
+  // millisecond field to 1000 (invalid SRT).
+  const total = Math.round(t * 1000);
+  const h = Math.floor(total / 3600000);
+  const m = Math.floor((total % 3600000) / 60000);
+  const s = Math.floor((total % 60000) / 1000);
+  const ms = total % 1000;
   const p = (n, w = 2) => String(n).padStart(w, "0");
   return `${p(h)}:${p(m)}:${p(s)},${p(ms, 3)}`;
 }
@@ -82,7 +85,12 @@ function buildCues(words, opts) {
 
   for (let i = 0; i < words.length; i++) {
     const w = words[i];
-    if (!w || typeof w.w !== "string" || typeof w.start !== "number") {
+    if (
+      !w ||
+      typeof w.w !== "string" ||
+      typeof w.start !== "number" ||
+      typeof w.end !== "number"
+    ) {
       fail(`malformed word entry at index ${i}: ${JSON.stringify(w)}`);
     }
     const nextGap =
@@ -126,10 +134,12 @@ function main() {
   }
   cues.sort((a, b) => a.start - b.start);
 
-  // Enforce monotonic, non-overlapping cues.
+  // Enforce monotonic, non-overlapping cues. Cues are sorted by start, so
+  // trimming the earlier cue's end down to the next cue's start can never
+  // push an end time before that cue's own start time.
   for (let i = 1; i < cues.length; i++) {
     if (cues[i].start < cues[i - 1].end) {
-      cues[i - 1].end = Math.max(cues[i].start, cues[i - 1].end - 0.01);
+      cues[i - 1].end = Math.min(cues[i - 1].end, cues[i].start);
     }
   }
 

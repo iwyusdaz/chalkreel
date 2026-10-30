@@ -14,6 +14,8 @@ template/.remotion/
 *.mp4
 *.webm
 *.mov
+# Exception: the labeled 12 s silent sample render is a docs asset, not render output
+!docs/assets/sample-segment-demo.mp4
 
 # Remotion / bundler caches
 .template-build/

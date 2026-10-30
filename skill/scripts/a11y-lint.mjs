@@ -96,6 +96,13 @@ function extractFacts(narration) {
   const sentences = narration.split(/(?<=[.!?])\s+/);
   for (const sentence of sentences) {
     const words = sentence.split(/\s+/);
+    // Capitalized word right after a sentence-starting capitalized word
+    // (e.g. "Roediger Karpicke"): catch it too. (Checked before the loop,
+    // which starts at i = 1.)
+    if (words.length > 1) {
+      const w1 = words[1].replace(/[^\w'-]/g, "");
+      if (w1.length > 2 && /^[A-Z][a-z]/.test(w1)) facts.add(w1);
+    }
     for (let i = 1; i < words.length; i++) {
       const w = words[i].replace(/[^\w'-]/g, "");
       if (
@@ -105,12 +112,6 @@ function extractFacts(narration) {
         !STOP.has(words[i - 1].replace(/[^\w'-]/g, "").toLowerCase())
       ) {
         facts.add(w);
-      }
-      // Capitalized word right after a sentence-starting capitalized word
-      // (e.g. "Roediger and Karpicke"): catch it too.
-      if (i === 0 && words.length > 1) {
-        const w1 = words[1].replace(/[^\w'-]/g, "");
-        if (w1.length > 2 && /^[A-Z][a-z]/.test(w1)) facts.add(w1);
       }
     }
   }

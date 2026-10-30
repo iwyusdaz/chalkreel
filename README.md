@@ -97,7 +97,11 @@ example**, labeled as such in the file.
 - Record a kokoro-82m voiceover for the sample and re-verify word alignment
   against real audio (10-cue spot check).
 - Run a full 110-second render with audio through GATE 4.
-- Agent review round from a fresh context, per the house pattern.
+- ~~Agent review round from a fresh context, per the house pattern~~ — done:
+  [evaluation/agent-review.md](evaluation/agent-review.md) (fresh-context
+  agent review, same-model limitation disclosed; found and fixed 3 script
+  bugs and 1 packaging gap, 1 open finding recorded). A multi-model review
+  panel remains pending.
 - Human protocol: 2–3 educators review one output video (templates to be
   added under `evaluation/`).
 

@@ -1,5 +1,31 @@
 # Changelog
 
+## 1.0.1 — 2026-10-31
+
+### Fixed (from the independent agent review, `evaluation/agent-review.md`)
+- `make-srt.mjs`: the non-overlap enforcement kept overlaps instead of
+  trimming them (`Math.max` vs `Math.min`); the committed paper-trail SRT
+  contained 6 overlapping cue pairs. Fixed and
+  `docs/paper-trail/06-subtitles.srt` regenerated (still 41 cues, now
+  genuinely non-overlapping).
+- `make-srt.mjs`: word entries are now validated for a numeric `end` field
+  (a missing `end` previously produced `NaN` timestamps with exit 0).
+- `make-srt.mjs`: the millisecond field can no longer round up to an
+  invalid `1000` (e.g. `00:00:00,1000`).
+- `a11y-lint.mjs`: removed an unreachable `i === 0` block inside a loop
+  starting at `i = 1`; its check (capitalized word after a sentence-initial
+  name) now actually runs.
+- Packaged the 12 s silent sample render
+  (`docs/assets/sample-segment-demo.mp4`, 1.2 MB) that the docs site and QC
+  report reference but that the blanket `*.mp4` ignore rule excluded; added
+  a targeted `.gitignore` exception.
+
+### Known open
+- `a11y-lint.mjs` fact extraction misses capitalized names preceded by
+  stopwords (e.g. "Roediger and Karpicke") — recorded as finding A1 in the
+  agent review; fixing it changes documented fact counts, so it is left for
+  a dedicated change.
+
 ## 1.0.0 — 2026-10-31
 
 Initial public release.
