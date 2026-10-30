@@ -1,0 +1,1308 @@
+{
+  "note": "Constructed example: word timings were synthesized at speaking pace from the approved narration for demonstration purposes. They are NOT output from a real TTS run. In a live pipeline this file comes from the TTS alignment step (per-word timestamps).",
+  "video": {
+    "title": "How retrieval practice works",
+    "fps": 30,
+    "language": "en"
+  },
+  "segments": [
+    {
+      "id": "seg-01",
+      "text": "Close this book. Try to remember what you just read. Harder than rereading it, right? That struggle is the point. It is called retrieval practice, and it is one of the best-studied ways to make learning stick.",
+      "start": 0,
+      "end": 18.2,
+      "words": [
+        {
+          "w": "Close",
+          "start": 0.1,
+          "end": 0.589
+        },
+        {
+          "w": "this",
+          "start": 0.609,
+          "end": 1.067
+        },
+        {
+          "w": "book.",
+          "start": 1.087,
+          "end": 1.545
+        },
+        {
+          "w": "Try",
+          "start": 1.765,
+          "end": 2.192
+        },
+        {
+          "w": "to",
+          "start": 2.212,
+          "end": 2.607
+        },
+        {
+          "w": "remember",
+          "start": 2.627,
+          "end": 3.148
+        },
+        {
+          "w": "what",
+          "start": 3.168,
+          "end": 3.626
+        },
+        {
+          "w": "you",
+          "start": 3.646,
+          "end": 4.072
+        },
+        {
+          "w": "just",
+          "start": 4.092,
+          "end": 4.55
+        },
+        {
+          "w": "read.",
+          "start": 4.57,
+          "end": 5.028
+        },
+        {
+          "w": "Harder",
+          "start": 5.248,
+          "end": 5.768
+        },
+        {
+          "w": "than",
+          "start": 5.788,
+          "end": 6.246
+        },
+        {
+          "w": "rereading",
+          "start": 6.266,
+          "end": 6.786
+        },
+        {
+          "w": "it,",
+          "start": 6.806,
+          "end": 7.202
+        },
+        {
+          "w": "right?",
+          "start": 7.422,
+          "end": 7.911
+        },
+        {
+          "w": "That",
+          "start": 8.131,
+          "end": 8.589
+        },
+        {
+          "w": "struggle",
+          "start": 8.609,
+          "end": 9.129
+        },
+        {
+          "w": "is",
+          "start": 9.149,
+          "end": 9.545
+        },
+        {
+          "w": "the",
+          "start": 9.565,
+          "end": 9.992
+        },
+        {
+          "w": "point.",
+          "start": 10.012,
+          "end": 10.501
+        },
+        {
+          "w": "It",
+          "start": 10.721,
+          "end": 11.117
+        },
+        {
+          "w": "is",
+          "start": 11.137,
+          "end": 11.532
+        },
+        {
+          "w": "called",
+          "start": 11.552,
+          "end": 12.072
+        },
+        {
+          "w": "retrieval",
+          "start": 12.092,
+          "end": 12.613
+        },
+        {
+          "w": "practice,",
+          "start": 12.633,
+          "end": 13.153
+        },
+        {
+          "w": "and",
+          "start": 13.373,
+          "end": 13.8
+        },
+        {
+          "w": "it",
+          "start": 13.82,
+          "end": 14.215
+        },
+        {
+          "w": "is",
+          "start": 14.235,
+          "end": 14.631
+        },
+        {
+          "w": "one",
+          "start": 14.651,
+          "end": 15.078
+        },
+        {
+          "w": "of",
+          "start": 15.098,
+          "end": 15.493
+        },
+        {
+          "w": "the",
+          "start": 15.513,
+          "end": 15.94
+        },
+        {
+          "w": "best-studied",
+          "start": 15.96,
+          "end": 16.48
+        },
+        {
+          "w": "ways",
+          "start": 16.5,
+          "end": 16.958
+        },
+        {
+          "w": "to",
+          "start": 16.978,
+          "end": 17.374
+        },
+        {
+          "w": "make",
+          "start": 17.394,
+          "end": 17.852
+        },
+        {
+          "w": "learning",
+          "start": 17.872,
+          "end": 18.392
+        },
+        {
+          "w": "stick.",
+          "start": 18.412,
+          "end": 18.901
+        }
+      ]
+    },
+    {
+      "id": "seg-02",
+      "text": "Retrieval practice means pulling information out of your memory instead of putting it in again. Rereading feels productive because the page looks familiar. But familiarity is not the same as being able to recall it later, without the book.",
+      "start": 18.2,
+      "end": 35.8,
+      "words": [
+        {
+          "w": "Retrieval",
+          "start": 18.3,
+          "end": 18.792
+        },
+        {
+          "w": "practice",
+          "start": 18.812,
+          "end": 19.305
+        },
+        {
+          "w": "means",
+          "start": 19.325,
+          "end": 19.787
+        },
+        {
+          "w": "pulling",
+          "start": 19.807,
+          "end": 20.3
+        },
+        {
+          "w": "information",
+          "start": 20.32,
+          "end": 20.812
+        },
+        {
+          "w": "out",
+          "start": 20.832,
+          "end": 21.236
+        },
+        {
+          "w": "of",
+          "start": 21.256,
+          "end": 21.63
+        },
+        {
+          "w": "your",
+          "start": 21.65,
+          "end": 22.084
+        },
+        {
+          "w": "memory",
+          "start": 22.104,
+          "end": 22.596
+        },
+        {
+          "w": "instead",
+          "start": 22.616,
+          "end": 23.108
+        },
+        {
+          "w": "of",
+          "start": 23.128,
+          "end": 23.503
+        },
+        {
+          "w": "putting",
+          "start": 23.523,
+          "end": 24.015
+        },
+        {
+          "w": "it",
+          "start": 24.035,
+          "end": 24.41
+        },
+        {
+          "w": "in",
+          "start": 24.43,
+          "end": 24.804
+        },
+        {
+          "w": "again.",
+          "start": 24.824,
+          "end": 25.287
+        },
+        {
+          "w": "Rereading",
+          "start": 25.507,
+          "end": 25.999
+        },
+        {
+          "w": "feels",
+          "start": 26.019,
+          "end": 26.482
+        },
+        {
+          "w": "productive",
+          "start": 26.502,
+          "end": 26.995
+        },
+        {
+          "w": "because",
+          "start": 27.015,
+          "end": 27.507
+        },
+        {
+          "w": "the",
+          "start": 27.527,
+          "end": 27.931
+        },
+        {
+          "w": "page",
+          "start": 27.951,
+          "end": 28.384
+        },
+        {
+          "w": "looks",
+          "start": 28.404,
+          "end": 28.867
+        },
+        {
+          "w": "familiar.",
+          "start": 28.887,
+          "end": 29.379
+        },
+        {
+          "w": "But",
+          "start": 29.599,
+          "end": 30.003
+        },
+        {
+          "w": "familiarity",
+          "start": 30.023,
+          "end": 30.516
+        },
+        {
+          "w": "is",
+          "start": 30.536,
+          "end": 30.91
+        },
+        {
+          "w": "not",
+          "start": 30.93,
+          "end": 31.334
+        },
+        {
+          "w": "the",
+          "start": 31.354,
+          "end": 31.758
+        },
+        {
+          "w": "same",
+          "start": 31.778,
+          "end": 32.211
+        },
+        {
+          "w": "as",
+          "start": 32.231,
+          "end": 32.606
+        },
+        {
+          "w": "being",
+          "start": 32.626,
+          "end": 33.089
+        },
+        {
+          "w": "able",
+          "start": 33.109,
+          "end": 33.542
+        },
+        {
+          "w": "to",
+          "start": 33.562,
+          "end": 33.936
+        },
+        {
+          "w": "recall",
+          "start": 33.956,
+          "end": 34.449
+        },
+        {
+          "w": "it",
+          "start": 34.469,
+          "end": 34.843
+        },
+        {
+          "w": "later,",
+          "start": 34.863,
+          "end": 35.326
+        },
+        {
+          "w": "without",
+          "start": 35.546,
+          "end": 36.038
+        },
+        {
+          "w": "the",
+          "start": 36.058,
+          "end": 36.462
+        },
+        {
+          "w": "book.",
+          "start": 36.482,
+          "end": 36.916
+        }
+      ]
+    },
+    {
+      "id": "seg-03",
+      "text": "The evidence goes back to 1909, but a clear modern test came in 2006. Two researchers asked students to either reread a passage or practice recalling it. One week later, the recall group remembered substantially more. A 2017 review of dozens of experiments found the same pattern across ages and subjects.",
+      "start": 35.8,
+      "end": 57.199999999999996,
+      "words": [
+        {
+          "w": "The",
+          "start": 35.9,
+          "end": 36.275
+        },
+        {
+          "w": "evidence",
+          "start": 36.295,
+          "end": 36.752
+        },
+        {
+          "w": "goes",
+          "start": 36.772,
+          "end": 37.175
+        },
+        {
+          "w": "back",
+          "start": 37.195,
+          "end": 37.597
+        },
+        {
+          "w": "to",
+          "start": 37.617,
+          "end": 37.965
+        },
+        {
+          "w": "1909,",
+          "start": 37.985,
+          "end": 38.388
+        },
+        {
+          "w": "but",
+          "start": 38.608,
+          "end": 38.983
+        },
+        {
+          "w": "a",
+          "start": 39.003,
+          "end": 39.323
+        },
+        {
+          "w": "clear",
+          "start": 39.343,
+          "end": 39.773
+        },
+        {
+          "w": "modern",
+          "start": 39.793,
+          "end": 40.25
+        },
+        {
+          "w": "test",
+          "start": 40.27,
+          "end": 40.673
+        },
+        {
+          "w": "came",
+          "start": 40.693,
+          "end": 41.095
+        },
+        {
+          "w": "in",
+          "start": 41.115,
+          "end": 41.463
+        },
+        {
+          "w": "2006.",
+          "start": 41.483,
+          "end": 41.886
+        },
+        {
+          "w": "Two",
+          "start": 42.106,
+          "end": 42.481
+        },
+        {
+          "w": "researchers",
+          "start": 42.501,
+          "end": 42.958
+        },
+        {
+          "w": "asked",
+          "start": 42.978,
+          "end": 43.408
+        },
+        {
+          "w": "students",
+          "start": 43.428,
+          "end": 43.885
+        },
+        {
+          "w": "to",
+          "start": 43.905,
+          "end": 44.253
+        },
+        {
+          "w": "either",
+          "start": 44.273,
+          "end": 44.73
+        },
+        {
+          "w": "reread",
+          "start": 44.75,
+          "end": 45.207
+        },
+        {
+          "w": "a",
+          "start": 45.227,
+          "end": 45.548
+        },
+        {
+          "w": "passage",
+          "start": 45.568,
+          "end": 46.025
+        },
+        {
+          "w": "or",
+          "start": 46.045,
+          "end": 46.393
+        },
+        {
+          "w": "practice",
+          "start": 46.413,
+          "end": 46.87
+        },
+        {
+          "w": "recalling",
+          "start": 46.89,
+          "end": 47.347
+        },
+        {
+          "w": "it.",
+          "start": 47.367,
+          "end": 47.715
+        },
+        {
+          "w": "One",
+          "start": 47.935,
+          "end": 48.31
+        },
+        {
+          "w": "week",
+          "start": 48.33,
+          "end": 48.733
+        },
+        {
+          "w": "later,",
+          "start": 48.753,
+          "end": 49.183
+        },
+        {
+          "w": "the",
+          "start": 49.403,
+          "end": 49.778
+        },
+        {
+          "w": "recall",
+          "start": 49.798,
+          "end": 50.255
+        },
+        {
+          "w": "group",
+          "start": 50.275,
+          "end": 50.705
+        },
+        {
+          "w": "remembered",
+          "start": 50.725,
+          "end": 51.182
+        },
+        {
+          "w": "substantially",
+          "start": 51.202,
+          "end": 51.659
+        },
+        {
+          "w": "more.",
+          "start": 51.679,
+          "end": 52.082
+        },
+        {
+          "w": "A",
+          "start": 52.302,
+          "end": 52.622
+        },
+        {
+          "w": "2017",
+          "start": 52.642,
+          "end": 53.045
+        },
+        {
+          "w": "review",
+          "start": 53.065,
+          "end": 53.522
+        },
+        {
+          "w": "of",
+          "start": 53.542,
+          "end": 53.89
+        },
+        {
+          "w": "dozens",
+          "start": 53.91,
+          "end": 54.367
+        },
+        {
+          "w": "of",
+          "start": 54.387,
+          "end": 54.735
+        },
+        {
+          "w": "experiments",
+          "start": 54.755,
+          "end": 55.212
+        },
+        {
+          "w": "found",
+          "start": 55.232,
+          "end": 55.662
+        },
+        {
+          "w": "the",
+          "start": 55.682,
+          "end": 56.057
+        },
+        {
+          "w": "same",
+          "start": 56.077,
+          "end": 56.479
+        },
+        {
+          "w": "pattern",
+          "start": 56.499,
+          "end": 56.957
+        },
+        {
+          "w": "across",
+          "start": 56.977,
+          "end": 57.434
+        },
+        {
+          "w": "ages",
+          "start": 57.454,
+          "end": 57.856
+        },
+        {
+          "w": "and",
+          "start": 57.876,
+          "end": 58.252
+        },
+        {
+          "w": "subjects.",
+          "start": 58.272,
+          "end": 58.729
+        }
+      ]
+    },
+    {
+      "id": "seg-04",
+      "text": "Why does struggling to recall help? Each time you pull a memory out, your brain rebuilds the path to it, and the path gets easier to find next time. Psychologists call this a desirable difficulty. The effort is not a sign of failure, it is part of how the memory gets stronger.",
+      "start": 57.2,
+      "end": 77,
+      "words": [
+        {
+          "w": "Why",
+          "start": 57.3,
+          "end": 57.638
+        },
+        {
+          "w": "does",
+          "start": 57.658,
+          "end": 58.021
+        },
+        {
+          "w": "struggling",
+          "start": 58.041,
+          "end": 58.454
+        },
+        {
+          "w": "to",
+          "start": 58.474,
+          "end": 58.788
+        },
+        {
+          "w": "recall",
+          "start": 58.808,
+          "end": 59.22
+        },
+        {
+          "w": "help?",
+          "start": 59.24,
+          "end": 59.603
+        },
+        {
+          "w": "Each",
+          "start": 59.823,
+          "end": 60.186
+        },
+        {
+          "w": "time",
+          "start": 60.206,
+          "end": 60.569
+        },
+        {
+          "w": "you",
+          "start": 60.589,
+          "end": 60.928
+        },
+        {
+          "w": "pull",
+          "start": 60.948,
+          "end": 61.311
+        },
+        {
+          "w": "a",
+          "start": 61.331,
+          "end": 61.62
+        },
+        {
+          "w": "memory",
+          "start": 61.64,
+          "end": 62.052
+        },
+        {
+          "w": "out,",
+          "start": 62.072,
+          "end": 62.411
+        },
+        {
+          "w": "your",
+          "start": 62.631,
+          "end": 62.994
+        },
+        {
+          "w": "brain",
+          "start": 63.014,
+          "end": 63.401
+        },
+        {
+          "w": "rebuilds",
+          "start": 63.421,
+          "end": 63.834
+        },
+        {
+          "w": "the",
+          "start": 63.854,
+          "end": 64.192
+        },
+        {
+          "w": "path",
+          "start": 64.212,
+          "end": 64.575
+        },
+        {
+          "w": "to",
+          "start": 64.595,
+          "end": 64.909
+        },
+        {
+          "w": "it,",
+          "start": 64.929,
+          "end": 65.243
+        },
+        {
+          "w": "and",
+          "start": 65.463,
+          "end": 65.801
+        },
+        {
+          "w": "the",
+          "start": 65.821,
+          "end": 66.16
+        },
+        {
+          "w": "path",
+          "start": 66.18,
+          "end": 66.543
+        },
+        {
+          "w": "gets",
+          "start": 66.563,
+          "end": 66.926
+        },
+        {
+          "w": "easier",
+          "start": 66.946,
+          "end": 67.358
+        },
+        {
+          "w": "to",
+          "start": 67.378,
+          "end": 67.692
+        },
+        {
+          "w": "find",
+          "start": 67.712,
+          "end": 68.075
+        },
+        {
+          "w": "next",
+          "start": 68.095,
+          "end": 68.458
+        },
+        {
+          "w": "time.",
+          "start": 68.478,
+          "end": 68.841
+        },
+        {
+          "w": "Psychologists",
+          "start": 69.061,
+          "end": 69.474
+        },
+        {
+          "w": "call",
+          "start": 69.494,
+          "end": 69.857
+        },
+        {
+          "w": "this",
+          "start": 69.877,
+          "end": 70.24
+        },
+        {
+          "w": "a",
+          "start": 70.26,
+          "end": 70.549
+        },
+        {
+          "w": "desirable",
+          "start": 70.569,
+          "end": 70.981
+        },
+        {
+          "w": "difficulty.",
+          "start": 71.001,
+          "end": 71.414
+        },
+        {
+          "w": "The",
+          "start": 71.634,
+          "end": 71.972
+        },
+        {
+          "w": "effort",
+          "start": 71.992,
+          "end": 72.404
+        },
+        {
+          "w": "is",
+          "start": 72.424,
+          "end": 72.738
+        },
+        {
+          "w": "not",
+          "start": 72.758,
+          "end": 73.097
+        },
+        {
+          "w": "a",
+          "start": 73.117,
+          "end": 73.406
+        },
+        {
+          "w": "sign",
+          "start": 73.426,
+          "end": 73.789
+        },
+        {
+          "w": "of",
+          "start": 73.809,
+          "end": 74.122
+        },
+        {
+          "w": "failure,",
+          "start": 74.142,
+          "end": 74.555
+        },
+        {
+          "w": "it",
+          "start": 74.775,
+          "end": 75.089
+        },
+        {
+          "w": "is",
+          "start": 75.109,
+          "end": 75.422
+        },
+        {
+          "w": "part",
+          "start": 75.442,
+          "end": 75.805
+        },
+        {
+          "w": "of",
+          "start": 75.825,
+          "end": 76.139
+        },
+        {
+          "w": "how",
+          "start": 76.159,
+          "end": 76.497
+        },
+        {
+          "w": "the",
+          "start": 76.517,
+          "end": 76.856
+        },
+        {
+          "w": "memory",
+          "start": 76.876,
+          "end": 77.288
+        },
+        {
+          "w": "gets",
+          "start": 77.308,
+          "end": 77.671
+        },
+        {
+          "w": "stronger.",
+          "start": 77.691,
+          "end": 78.104
+        }
+      ]
+    },
+    {
+      "id": "seg-05",
+      "text": "You can use this in three ways. Write practice questions and answer them from memory. Make flashcards and grade yourself honestly. Or do a brain dump: close your notes and write down everything you remember about the topic, then check what you missed.",
+      "start": 77,
+      "end": 97.6,
+      "words": [
+        {
+          "w": "You",
+          "start": 77.1,
+          "end": 77.527
+        },
+        {
+          "w": "can",
+          "start": 77.547,
+          "end": 77.974
+        },
+        {
+          "w": "use",
+          "start": 77.994,
+          "end": 78.421
+        },
+        {
+          "w": "this",
+          "start": 78.441,
+          "end": 78.899
+        },
+        {
+          "w": "in",
+          "start": 78.919,
+          "end": 79.315
+        },
+        {
+          "w": "three",
+          "start": 79.335,
+          "end": 79.825
+        },
+        {
+          "w": "ways.",
+          "start": 79.845,
+          "end": 80.303
+        },
+        {
+          "w": "Write",
+          "start": 80.523,
+          "end": 81.012
+        },
+        {
+          "w": "practice",
+          "start": 81.032,
+          "end": 81.553
+        },
+        {
+          "w": "questions",
+          "start": 81.573,
+          "end": 82.093
+        },
+        {
+          "w": "and",
+          "start": 82.113,
+          "end": 82.541
+        },
+        {
+          "w": "answer",
+          "start": 82.561,
+          "end": 83.081
+        },
+        {
+          "w": "them",
+          "start": 83.101,
+          "end": 83.559
+        },
+        {
+          "w": "from",
+          "start": 83.579,
+          "end": 84.038
+        },
+        {
+          "w": "memory.",
+          "start": 84.058,
+          "end": 84.578
+        },
+        {
+          "w": "Make",
+          "start": 84.798,
+          "end": 85.256
+        },
+        {
+          "w": "flashcards",
+          "start": 85.276,
+          "end": 85.797
+        },
+        {
+          "w": "and",
+          "start": 85.817,
+          "end": 86.244
+        },
+        {
+          "w": "grade",
+          "start": 86.264,
+          "end": 86.753
+        },
+        {
+          "w": "yourself",
+          "start": 86.773,
+          "end": 87.294
+        },
+        {
+          "w": "honestly.",
+          "start": 87.314,
+          "end": 87.834
+        },
+        {
+          "w": "Or",
+          "start": 88.054,
+          "end": 88.45
+        },
+        {
+          "w": "do",
+          "start": 88.47,
+          "end": 88.866
+        },
+        {
+          "w": "a",
+          "start": 88.886,
+          "end": 89.251
+        },
+        {
+          "w": "brain",
+          "start": 89.271,
+          "end": 89.76
+        },
+        {
+          "w": "dump:",
+          "start": 89.78,
+          "end": 90.239
+        },
+        {
+          "w": "close",
+          "start": 90.459,
+          "end": 90.948
+        },
+        {
+          "w": "your",
+          "start": 90.968,
+          "end": 91.426
+        },
+        {
+          "w": "notes",
+          "start": 91.446,
+          "end": 91.936
+        },
+        {
+          "w": "and",
+          "start": 91.956,
+          "end": 92.383
+        },
+        {
+          "w": "write",
+          "start": 92.403,
+          "end": 92.892
+        },
+        {
+          "w": "down",
+          "start": 92.912,
+          "end": 93.37
+        },
+        {
+          "w": "everything",
+          "start": 93.39,
+          "end": 93.911
+        },
+        {
+          "w": "you",
+          "start": 93.931,
+          "end": 94.358
+        },
+        {
+          "w": "remember",
+          "start": 94.378,
+          "end": 94.898
+        },
+        {
+          "w": "about",
+          "start": 94.918,
+          "end": 95.408
+        },
+        {
+          "w": "the",
+          "start": 95.428,
+          "end": 95.855
+        },
+        {
+          "w": "topic,",
+          "start": 95.875,
+          "end": 96.364
+        },
+        {
+          "w": "then",
+          "start": 96.584,
+          "end": 97.042
+        },
+        {
+          "w": "check",
+          "start": 97.062,
+          "end": 97.552
+        },
+        {
+          "w": "what",
+          "start": 97.572,
+          "end": 98.03
+        },
+        {
+          "w": "you",
+          "start": 98.05,
+          "end": 98.477
+        },
+        {
+          "w": "missed.",
+          "start": 98.497,
+          "end": 99.018
+        }
+      ]
+    },
+    {
+      "id": "seg-06",
+      "text": "So the next time you study, skip the highlighter marathon. Close the book first and try to recall. When recall is hard, that is when learning is happening.",
+      "start": 97.6,
+      "end": 110.5,
+      "words": [
+        {
+          "w": "So",
+          "start": 97.7,
+          "end": 98.072
+        },
+        {
+          "w": "the",
+          "start": 98.092,
+          "end": 98.494
+        },
+        {
+          "w": "next",
+          "start": 98.514,
+          "end": 98.944
+        },
+        {
+          "w": "time",
+          "start": 98.964,
+          "end": 99.395
+        },
+        {
+          "w": "you",
+          "start": 99.415,
+          "end": 99.817
+        },
+        {
+          "w": "study,",
+          "start": 99.837,
+          "end": 100.297
+        },
+        {
+          "w": "skip",
+          "start": 100.517,
+          "end": 100.947
+        },
+        {
+          "w": "the",
+          "start": 100.967,
+          "end": 101.369
+        },
+        {
+          "w": "highlighter",
+          "start": 101.389,
+          "end": 101.878
+        },
+        {
+          "w": "marathon.",
+          "start": 101.898,
+          "end": 102.388
+        },
+        {
+          "w": "Close",
+          "start": 102.608,
+          "end": 103.068
+        },
+        {
+          "w": "the",
+          "start": 103.088,
+          "end": 103.489
+        },
+        {
+          "w": "book",
+          "start": 103.509,
+          "end": 103.94
+        },
+        {
+          "w": "first",
+          "start": 103.96,
+          "end": 104.42
+        },
+        {
+          "w": "and",
+          "start": 104.44,
+          "end": 104.841
+        },
+        {
+          "w": "try",
+          "start": 104.861,
+          "end": 105.263
+        },
+        {
+          "w": "to",
+          "start": 105.283,
+          "end": 105.655
+        },
+        {
+          "w": "recall.",
+          "start": 105.675,
+          "end": 106.164
+        },
+        {
+          "w": "When",
+          "start": 106.384,
+          "end": 106.815
+        },
+        {
+          "w": "recall",
+          "start": 106.835,
+          "end": 107.324
+        },
+        {
+          "w": "is",
+          "start": 107.344,
+          "end": 107.717
+        },
+        {
+          "w": "hard,",
+          "start": 107.737,
+          "end": 108.167
+        },
+        {
+          "w": "that",
+          "start": 108.387,
+          "end": 108.818
+        },
+        {
+          "w": "is",
+          "start": 108.838,
+          "end": 109.21
+        },
+        {
+          "w": "when",
+          "start": 109.23,
+          "end": 109.661
+        },
+        {
+          "w": "learning",
+          "start": 109.681,
+          "end": 110.171
+        },
+        {
+          "w": "is",
+          "start": 110.191,
+          "end": 110.563
+        },
+        {
+          "w": "happening.",
+          "start": 110.583,
+          "end": 111.072
+        }
+      ]
+    }
+  ]
+}

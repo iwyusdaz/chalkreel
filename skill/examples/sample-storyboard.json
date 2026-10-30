@@ -1,0 +1,133 @@
+{
+  "note": "Constructed example storyboard for the sample video 'How retrieval practice works'. Produced through the chalkreel pipeline; narration is the approved script (docs/paper-trail/03-narration.md).",
+  "video": {
+    "title": "How retrieval practice works",
+    "language": "en",
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "backdrop": "chalkboard",
+    "srtEmitted": true,
+    "transcriptEmitted": true,
+    "adNotesEmitted": true,
+    "claimsLedger": "docs/paper-trail/07-claims-ledger.md"
+  },
+  "segments": [
+    {
+      "id": "seg-01",
+      "title": "Hook",
+      "sceneKind": "statement",
+      "startSec": 0.0,
+      "durationSec": 18.2,
+      "narration": "Close this book. Try to remember what you just read. Harder than rereading it, right? That struggle is the point. It is called retrieval practice, and it is one of the best-studied ways to make learning stick.",
+      "visual": {
+        "backdrop": "chalkboard",
+        "description": "A chalk-drawn open book on a chalkboard; the book closes with a drawn arc, then the title line 'Recall beats rereading' underlines itself in chalk.",
+        "elements": [
+          { "type": "book-icon", "desc": "chalk line drawing of a closed book" },
+          { "type": "headline", "text": "Recall beats rereading" }
+        ],
+        "onScreenText": ["Recall beats rereading"]
+      },
+      "audioDescriptionNote": "A chalkboard with a line-drawn book that closes. The headline 'Recall beats rereading' is underlined in chalk.",
+      "claims": []
+    },
+    {
+      "id": "seg-02",
+      "title": "What retrieval practice is",
+      "sceneKind": "definition",
+      "startSec": 18.2,
+      "durationSec": 17.6,
+      "narration": "Retrieval practice means pulling information out of your memory instead of putting it in again. Rereading feels productive because the page looks familiar. But familiarity is not the same as being able to recall it later, without the book.",
+      "visual": {
+        "backdrop": "chalkboard",
+        "description": "Two chalk arrows: one labeled 'IN: reread' pointing at a head outline, one labeled 'OUT: recall' pointing away from it. The OUT arrow is drawn thicker.",
+        "elements": [
+          { "type": "definition", "term": "Retrieval practice", "definition": "Pull information OUT of memory" },
+          { "type": "arrow-in-out", "inLabel": "IN: reread", "outLabel": "OUT: recall" }
+        ],
+        "onScreenText": ["Retrieval practice: pull information OUT of memory", "Familiarity is not recall"]
+      },
+      "audioDescriptionNote": "A head outline on the chalkboard. One arrow labeled 'IN: reread' points in; a thicker arrow labeled 'OUT: recall' points out. Below, the line 'Familiarity is not recall'.",
+      "claims": []
+    },
+    {
+      "id": "seg-03",
+      "title": "The evidence",
+      "sceneKind": "timeline",
+      "startSec": 35.8,
+      "durationSec": 21.4,
+      "narration": "The evidence goes back to 1909, but a clear modern test came in 2006. Two researchers asked students to either reread a passage or practice recalling it. One week later, the recall group remembered substantially more. A 2017 review of dozens of experiments found the same pattern across ages and subjects.",
+      "visual": {
+        "backdrop": "chalkboard",
+        "description": "A chalk timeline with three dots: 1909, 2006, 2017. Each dot gets a short label as it is mentioned.",
+        "elements": [
+          { "type": "timeline", "items": [
+            { "year": "1909", "label": "First recall experiments" },
+            { "year": "2006", "label": "Reread vs. recall experiment" },
+            { "year": "2017", "label": "Review: works across ages and subjects" }
+          ] }
+        ],
+        "onScreenText": ["1909 first recall experiments", "2006 reread vs. recall experiment", "2017 review: works across ages and subjects"]
+      },
+      "audioDescriptionNote": "A horizontal chalk timeline with three marked dots: 1909 'First recall experiments', 2006 'Reread vs. recall experiment', and 2017 'Review: works across ages and subjects'.",
+      "claims": ["claim-001", "claim-002", "claim-003"]
+    },
+    {
+      "id": "seg-04",
+      "title": "Why it works",
+      "sceneKind": "cycle",
+      "startSec": 57.2,
+      "durationSec": 19.8,
+      "narration": "Why does struggling to recall help? Each time you pull a memory out, your brain rebuilds the path to it, and the path gets easier to find next time. Psychologists call this a desirable difficulty. The effort is not a sign of failure, it is part of how the memory gets stronger.",
+      "visual": {
+        "backdrop": "chalkboard",
+        "description": "A three-step chalk cycle diagram: 'Try to recall', 'Rebuild the path', 'Easier next time', with arrows looping between them. Caption: 'Desirable difficulty'.",
+        "elements": [
+          { "type": "cycle", "steps": ["Try to recall", "Rebuild the path", "Easier next time"] },
+          { "type": "caption", "text": "Desirable difficulty" }
+        ],
+        "onScreenText": ["Desirable difficulty", "Try to recall", "Rebuild the path", "Easier next time"]
+      },
+      "audioDescriptionNote": "A chalk cycle diagram with three steps connected by arrows: 'Try to recall', 'Rebuild the path', 'Easier next time'. The caption 'Desirable difficulty' sits underneath.",
+      "claims": ["claim-004"]
+    },
+    {
+      "id": "seg-05",
+      "title": "Three ways to use it",
+      "sceneKind": "list",
+      "startSec": 77.0,
+      "durationSec": 20.6,
+      "narration": "You can use this in three ways. Write practice questions and answer them from memory. Make flashcards and grade yourself honestly. Or do a brain dump: close your notes and write down everything you remember about the topic, then check what you missed.",
+      "visual": {
+        "backdrop": "chalkboard",
+        "description": "A numbered chalk list that fills in item by item: 1 Practice questions, 2 Flashcards, 3 Brain dump.",
+        "elements": [
+          { "type": "list", "items": ["Practice questions", "Flashcards", "Brain dump"] }
+        ],
+        "onScreenText": ["1. Practice questions", "2. Flashcards", "3. Brain dump"]
+      },
+      "audioDescriptionNote": "A numbered chalk list appears item by item: one, practice questions; two, flashcards; three, brain dump.",
+      "claims": ["claim-005"]
+    },
+    {
+      "id": "seg-06",
+      "title": "Recap and close",
+      "sceneKind": "statement",
+      "startSec": 97.6,
+      "durationSec": 12.9,
+      "narration": "So the next time you study, skip the highlighter marathon. Close the book first and try to recall. When recall is hard, that is when learning is happening.",
+      "visual": {
+        "backdrop": "chalkboard",
+        "description": "The closing line 'Close the book first' draws on in large chalk letters, with a small chalk checkmark next to 'Recall, then check'.",
+        "elements": [
+          { "type": "headline", "text": "Close the book first" },
+          { "type": "check", "text": "Recall, then check" }
+        ],
+        "onScreenText": ["Close the book first", "Recall, then check"]
+      },
+      "audioDescriptionNote": "Large chalk letters read 'Close the book first'. A checkmark appears beside 'Recall, then check'.",
+      "claims": []
+    }
+  ]
+}

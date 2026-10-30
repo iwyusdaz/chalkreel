@@ -1,0 +1,47 @@
+{
+  "note": "Negative fixture: deliberately broken storyboard. a11y-lint must FAIL this file. Numbers in narration are missing from on-screen text, one segment has no visuals at all, AD notes are missing, and the deliverable flags are off.",
+  "video": {
+    "title": "Broken example (negative fixture)",
+    "language": "en",
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "srtEmitted": false,
+    "transcriptEmitted": false,
+    "claimsLedger": null
+  },
+  "segments": [
+    {
+      "id": "bad-01",
+      "title": "Evidence dump",
+      "sceneKind": "statement",
+      "startSec": 0.0,
+      "durationSec": 15.0,
+      "narration": "In 2006, researchers found students recalled roughly 50 percent more a week later, and a 2017 review confirmed it.",
+      "visual": {
+        "backdrop": "chalkboard",
+        "description": "A plain chalkboard with no text or elements.",
+        "elements": [],
+        "onScreenText": []
+      },
+      "audioDescriptionNote": null,
+      "claims": []
+    },
+    {
+      "id": "bad-02",
+      "title": "No visuals at all",
+      "sceneKind": "statement",
+      "startSec": 14.0,
+      "durationSec": 10.0,
+      "narration": "Desirable difficulty makes memory stronger over time.",
+      "visual": {
+        "backdrop": "chalkboard",
+        "description": "",
+        "elements": [],
+        "onScreenText": []
+      },
+      "audioDescriptionNote": "",
+      "claims": []
+    }
+  ]
+}
