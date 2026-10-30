@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>chalkreel — learning objective in, accessible explainer video out</title>
+<meta name="description" content="Case study: chalkreel, an agent-skill package that turns a measurable learning objective into a short, code-drawn, fully accessible explainer video.">
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.65;
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 1.25rem;
+    color: #1b1b1b;
+    background: #ffffff;
+  }
+  h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 0.4rem; }
+  h2 { font-size: 1.3rem; margin-top: 2.2rem; border-bottom: 1px solid #ddd; padding-bottom: 0.25rem; }
+  h3 { font-size: 1.05rem; margin-top: 1.4rem; }
+  a { color: #0b45a0; }
+  code, pre {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.9em;
+    background: #f4f4f4;
+    border-radius: 4px;
+  }
+  code { padding: 0.1em 0.3em; }
+  pre { padding: 0.8rem 1rem; overflow-x: auto; line-height: 1.45; }
+  .tagline { font-size: 1.05rem; color: #444; margin-top: 0; }
+  .notice {
+    background: #f2f6ff;
+    border: 1px solid #b9c8ee;
+    border-radius: 6px;
+    padding: 0.7rem 1rem;
+    margin: 1rem 0;
+  }
+  .warn {
+    background: #fff8e8;
+    border: 1px solid #e4c96a;
+    border-radius: 6px;
+    padding: 0.7rem 1rem;
+    margin: 1rem 0;
+  }
+  table { border-collapse: collapse; width: 100%; margin: 0.8rem 0; }
+  th, td { border: 1px solid #ccc; padding: 0.45rem 0.6rem; text-align: left; vertical-align: top; }
+  th { background: #f0f0f0; }
+  img { max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 6px; }
+  figure { margin: 1rem 0; }
+  figcaption { font-size: 0.9rem; color: #555; margin-top: 0.4rem; }
+  footer { margin-top: 3rem; border-top: 1px solid #ddd; padding-top: 1rem; font-size: 0.9rem; color: #555; }
+</style>
+</head>
+<body>
+<main>
+<h1>chalkreel</h1>
+<p class="tagline">Learning objective in, accessible explainer video out — an agent-skill
+package for e-learning developers and instructional designers.</p>
+<p><a href="https://github.com/iwyusdaz/chalkreel">Repository</a> ·
+<a href="transcript.html">Sample transcript page</a> ·
+<a href="assets/sample-segment-demo.mp4">12-second sample render (MP4, silent)</a></p>
+
+<div class="notice">
+<strong>Evaluation status:</strong> automated script checks, negative tests, and agent-based
+frame review are complete. No TTS voice has been recorded, so no full-length video with
+audio exists yet. No real learners or subject-matter experts have reviewed any output.
+See <a href="paper-trail/08-qc-report.md">the QC report</a> for exactly what was run.
+</div>
+
+<h2>The problem</h2>
+<p>AI explainer-video generators start from a <em>topic</em> and optimize for engagement.
+A learning video has different requirements they ignore:</p>
+<ul>
+  <li>It starts from a <strong>measurable learning objective</strong>, not a topic.</li>
+  <li>Cognitive load is managed deliberately (Mayer's multimedia principles), not left to taste.</li>
+  <li>Captions, a transcript, and audio-description notes are <strong>deliverables</strong> — teams shipping to an LMS can be penalized for skipping them.</li>
+  <li>Every factual claim in the narration should be <strong>traceable to a source</strong>.</li>
+</ul>
+<p>No open-source explainer tool does any of this. That is the gap chalkreel fills.</p>
+
+<h2>The method</h2>
+<p>chalkreel is an agent skill: a written pipeline (<code>skill/SKILL.md</code>) plus
+small standalone scripts and a Remotion template. The pipeline has seven stages and
+<strong>four human approval gates</strong>:</p>
+<pre>1. OBJECTIVE GATE   topic → ABCD objective (script-validated)   → GATE 1 approval
+2. RESEARCH         claims extracted with sources, before scripting
+3. NARRATION        segment-budgeted script, AI-tell lint, reading level → GATE 2 approval
+4. STYLE BAKE-OFF   same beat in 2–3 visual themes                  → GATE 3 pick
+5. BUILD            one Remotion component per segment; TTS with word timestamps
+6. ACCESSIBILITY    SRT + transcript HTML + AD notes + "no info in audio alone" lint
+7. QC               scored against written Mayer-principle criteria → GATE 4 final cut</pre>
+<p>Frames are <strong>drawn in code</strong> (Remotion + SVG): no generative video
+models, no stock footage. Every frame is reviewable, diffable, and reproducible.</p>
+
+<h2>Sample render</h2>
+<figure>
+  <img src="assets/frame-timeline.png" alt="Rendered chalkboard frame: a hand-drawn timeline with the years 1909, 2006 and 2017 marked in amber dots, labeled First recall experiments, Reread vs. recall experiment, and Review: works across ages and subjects.">
+  <figcaption>Rendered frame from the evidence segment (agent-reviewed; this exact frame
+  failed spatial-contiguity QC on the first pass and was fixed — see the paper trail).</figcaption>
+</figure>
+<p>The <a href="assets/sample-segment-demo.mp4">12-second sample render</a> is a
+<strong>silent, constructed example</strong>: it demonstrates the chalkboard backdrop,
+code-drawn scene, word-aligned caption layer and chapter progress bar for segments 1–2.
+The narration audio was not recorded in this build run, so no full video with sound exists.
+<em>Do not judge the content from it; judge the paper trail.</em></p>
+
+<h2>The paper trail (worked example)</h2>
+<p>One short sample — "How retrieval practice works", 6 segments, ~110 s — was run
+through every scriptable stage of the pipeline. All artifacts are committed:</p>
+<table>
+  <tr><th>Step</th><th>Artifact</th></tr>
+  <tr><td>1 · Objective</td><td><a href="paper-trail/01-objective.md">ABCD objective + beat map</a> (gate script passes)</td></tr>
+  <tr><td>2 · Research</td><td><a href="paper-trail/02-research-notes.md">six sourced claims</a></td></tr>
+  <tr><td>3 · Narration</td><td><a href="paper-trail/03-narration.md">script</a> — lint passes with 0 errors</td></tr>
+  <tr><td>4 · Storyboard</td><td><a href="paper-trail/04-storyboard.json">storyboard JSON</a> — a11y lint passes</td></tr>
+  <tr><td>5 · Timing</td><td><a href="paper-trail/05-timing.json">word timings</a> — <strong>constructed example</strong>, not a real TTS run</td></tr>
+  <tr><td>6 · Subtitles</td><td><a href="paper-trail/06-subtitles.srt">SRT</a> — generated by <code>make-srt.mjs</code></td></tr>
+  <tr><td>7 · Claims ledger</td><td><a href="paper-trail/07-claims-ledger.md">claims ledger</a></td></tr>
+  <tr><td>8 · QC</td><td><a href="paper-trail/08-qc-report.md">QC report</a> — includes one real FAIL→fix→re-check cycle</td></tr>
+</table>
+<p>The generated <a href="transcript.html">accessible transcript page</a> is what the
+pipeline would ship alongside the video.</p>
+
+<h2>What was verified (and how)</h2>
+<ul>
+  <li><strong>Negative tests:</strong> seeded bad narration (<a href="https://github.com/iwyusdaz/chalkreel/blob/main/skill/examples/bad-narration.txt"><code>bad-narration.txt</code></a>) trips 29 lint errors and is rejected; a broken storyboard fails the a11y lint on 10 violations. The lints demonstrably catch what they claim to catch.</li>
+  <li><strong>Round-trip:</strong> 250/250 narration words appear in the generated SRT; cues are monotonic; the transcript HTML contains every segment, on-screen text and AD note.</li>
+  <li><strong>Compile + render:</strong> the Remotion template passes <code>tsc --noEmit</code>, bundles, and renders (360-frame sample + stills). One real visual defect was found by frame QC and fixed.</li>
+</ul>
+
+<h2>Evidence: what it can and cannot show</h2>
+<ul>
+  <li><strong>Can show:</strong> the pipeline's written criteria were applied mechanically and transparently; the tooling catches real violations; the template produces reviewable frames.</li>
+  <li><strong>Cannot show:</strong> that any output teaches anything (no learner testing, and none is claimed), that experts endorse the content (no expert panel), or caption-accuracy against real speech (no TTS run).</li>
+</ul>
+<p>Reviews referenced on this page are <strong>agent heuristic reviews</strong> conducted
+by the build agent (same model as the author — a disclosed limitation), never presented
+as expert or learner feedback.</p>
+
+<h2>Accessibility</h2>
+<p>The generated transcript page and this site target WCAG 2.1 AA: one <code>h1</code> per
+page, logical heading order, <code>lang</code> attribute, high-contrast text, 320&nbsp;px-safe
+reflow, no motion, descriptive link text, and text alternatives for the sample media. The
+skill's <code>a11y-lint.mjs</code> enforces the pipeline-side rule that no fact lives in
+audio alone. The site was checked manually and with automated markup review; it has not
+been tested with a screen reader by a person who uses one daily — that review is a known
+gap.</p>
+
+<h2>License and attribution</h2>
+<p>Code: <a href="https://opensource.org/license/mit">MIT</a> (<code>LICENSE</code>).
+Method-credit and license boundaries are documented in
+<a href="https://github.com/iwyusdaz/chalkreel/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>:
+the code-drawn Remotion method is inspired by <em>anything2explainer</em> (PolyForm
+Noncommercial — method only, zero code copied, re-implemented from scratch), the gated
+approval flow pattern from <em>vox-director</em> (MIT), and the AI-writing-tells checklist
+concept from <em>humanizer</em> and Wikipedia's "Signs of AI writing" (lint implemented
+independently).</p>
+
+<footer>
+<p>chalkreel · built 2026-10-31 · demonstration outputs are labeled as constructed
+examples · no learning-gain claims are made anywhere in this project.</p>
+</footer>
+</main>
+</body>
+</html>
