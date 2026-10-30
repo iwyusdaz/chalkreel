@@ -1,0 +1,24 @@
+{
+  "name": "chalkreel-template",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Remotion template for chalkreel: chalkboard backdrop, code-drawn scenes, word-aligned caption layer, chapter progress bar. Re-implemented from scratch (MIT); method inspired by anything2explainer, no code copied.",
+  "scripts": {
+    "dev": "remotion studio",
+    "build": "remotion bundle",
+    "render": "remotion render ChalkreelVideo out/video.mp4",
+    "render-sample": "remotion render ChalkreelVideo out/sample.mp4 --frames=0-359",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.244",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.244"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "typescript": "5.6.3",
+    "zod": "^3.25.0"
+  }
+}
