@@ -1,0 +1,34 @@
+{
+  "name": "chalkreel",
+  "version": "1.0.0",
+  "description": "Learning objective in, accessible explainer video out. An agent-skill package: objective gate, sourced research, humanized narration, code-drawn Remotion frames, word-aligned subtitles, full accessibility bundle, and Mayer-principle QC with 4 human approval gates.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "test:objective-gate": "node skill/scripts/objective-gate.mjs \"Given a patient case file, second-year nursing students will classify the arrhythmia using the ACLS algorithm, correctly for at least 4 of 5 cases.\"",
+    "test:lint-negative": "node skill/scripts/lint-narration.mjs skill/examples/bad-narration.txt && echo 'UNEXPECTED PASS' || echo 'OK: bad narration was rejected (exit code above)'",
+    "test:lint-positive": "node skill/scripts/lint-narration.mjs skill/examples/good-narration.txt",
+    "test:srt": "node skill/scripts/make-srt.mjs skill/examples/sample-timing.json --out /tmp/chalkreel-test/sample.srt",
+    "test:transcript": "node skill/scripts/make-transcript.mjs --timing skill/examples/sample-timing.json --storyboard skill/examples/sample-storyboard.json --out /tmp/chalkreel-test/transcript.html",
+    "test:a11y": "node skill/scripts/a11y-lint.mjs skill/examples/sample-storyboard.json",
+    "test:a11y-negative": "node skill/scripts/a11y-lint.mjs skill/examples/bad-storyboard.json && echo 'UNEXPECTED PASS' || echo 'OK: bad storyboard was rejected'",
+    "test": "npm run test:objective-gate && npm run test:lint-positive && npm run test:srt && npm run test:transcript && npm run test:a11y"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iwyusdaz/chalkreel"
+  },
+  "keywords": [
+    "explainer-video",
+    "instructional-design",
+    "accessibility",
+    "remotion",
+    "agent-skills",
+    "mayer-multimedia",
+    "e-learning"
+  ]
+}

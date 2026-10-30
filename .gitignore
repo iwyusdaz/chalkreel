@@ -1,0 +1,29 @@
+# Secrets and local config
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+
+# Render and build output
+template/out/
+out/
+dist/
+template/.remotion/
+*.mp4
+*.webm
+*.mov
+
+# Remotion / bundler caches
+.template-build/
+bundle/
+template/build/
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+*.log
+
+# Test scratch
+/tmp/
